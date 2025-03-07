@@ -1,0 +1,25 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+
+    .login-card {
+        width: 350px;
+        padding: 20px;
+        text-align: center;
+      }
+  }
+  
+  
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }

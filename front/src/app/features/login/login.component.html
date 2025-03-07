@@ -1,0 +1,24 @@
+<div class="login-container" *ngIf="!authService.isAuthenticated()">
+    <mat-card class="login-card">
+      <mat-card-title>Login</mat-card-title>
+      <mat-card-content>
+        <form>
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Username</mat-label>
+            <input matInput type="text" [(ngModel)]="username" name="username">
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" [(ngModel)]="password" name="password">
+          </mat-form-field>
+  
+          <div class="button-container">
+            <button mat-raised-button color="primary" (click)="login()">Login</button>
+            <button mat-stroked-button color="accent" (click)="register()">Register</button>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  
